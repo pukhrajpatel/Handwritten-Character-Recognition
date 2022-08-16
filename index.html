@@ -1,0 +1,28 @@
+<html>
+<head>
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >  -->  
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+
+</head>
+<body>
+    <h1 class = "Main"> Hello! Welcome to Handwritten Character Prediction</h1>
+    <div class="file_container">
+        <div id="canvas_box" class="canvas-box"></div>
+        <div id = "output" class = "canvas-box output">
+            <h1 id = "pred_t"></h1>
+            <p id = "pred_c", class = "pred_char"></p>
+            <!--<textarea id="char" name="char" rows="4" cols="50"></textarea>-->
+        </div>
+    </div>
+    <div class="file_button">
+        <button id="clear-button" class="btn btn-dark">Clear</button>
+        <button id="predict-button" class="btn btn-dark">Predict</button>
+    </div>
+
+    <script src="recognition.js"></script>
+</body>
+</html>
